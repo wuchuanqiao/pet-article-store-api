@@ -6,11 +6,20 @@ import java.util.Date;
 /**
  * Created by chuanqiao.wu on 2015/3/2.
  */
-public class ApiBase implements Serializable{
+public class ApiBase implements Serializable {
+    private long id;
     private long version;
     private String describe;
     private Date createTime;
     private Date updateTime;
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
 
     public long getVersion() {
         return version;

@@ -1,7 +1,5 @@
 package com.studio.pet.article.store.api.bean.base;
 
-import com.studio.pet.article.store.api.bean.exception.ApiError;
-
 import java.io.Serializable;
 
 /**
@@ -34,5 +32,36 @@ public class ApiResponse<T> implements Serializable {
 
     public void setData(T data) {
         this.data = data;
+    }
+
+
+    public static class ApiError implements Serializable {
+        private String message;
+        private int code;
+        private Throwable throwable;
+
+        public String getMessage() {
+            return message;
+        }
+
+        public void setMessage(String message) {
+            this.message = message;
+        }
+
+        public int getCode() {
+            return code;
+        }
+
+        public void setCode(int code) {
+            this.code = code;
+        }
+
+        public Throwable getThrowable() {
+            return throwable;
+        }
+
+        public void setThrowable(Throwable throwable) {
+            this.throwable = throwable;
+        }
     }
 }
