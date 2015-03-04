@@ -1,6 +1,7 @@
 package com.studio.pet.article.store.api.bean;
 
-import com.studio.pet.article.store.api.bean.base.ApiBase;
+
+import com.studio.tc.store.api.bean.ApiBase;
 
 import java.io.Serializable;
 
